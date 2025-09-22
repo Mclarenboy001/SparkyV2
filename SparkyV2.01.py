@@ -90,7 +90,7 @@ class GPUScreenAnswerApp:
     def __init__(self, root):
         self.root = root
         gpu_status = "🚀 GPU" if GPU_INFO['cuda_available'] else "🖥️ CPU"
-        root.title(f"GPU Smart Screen Answer - {gpu_status} Accelerated")
+        root.title(f"SparkyV2.01 - {gpu_status} Accelerated")
 
         self.output_mode = DEFAULT_OUTPUT
         self.capture_region = None
@@ -998,4 +998,5 @@ if __name__ == "__main__":
                                      f"Try installing missing dependencies:\n"
                                      f"pip install torch torchvision --index-url https://download.pytorch.org/whl/cu118")
             except:
+
                 pass
