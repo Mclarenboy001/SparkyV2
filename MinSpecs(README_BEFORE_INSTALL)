@@ -1,0 +1,101 @@
+🖥️ CPU-Only Mode (Minimum)
+System Requirements:
+
+OS: Windows 10/11, macOS 10.14+, or Linux (Ubuntu 18.04+)
+CPU: Intel i3-4000 series / AMD Ryzen 3 2200G or equivalent
+RAM: 4GB (8GB recommended)
+Storage: 3GB free space (for AI models)
+Python: 3.7 - 3.11 (3.8+ recommended)
+
+Performance (CPU-only):
+
+OCR Speed: 2-5 seconds per image
+AI Response: 30-60 seconds for complex answers
+Model Size: Works with 3B parameter models (orca-mini)
+
+
+🚀 GPU-Accelerated Mode (Recommended)
+GPU Requirements:
+
+GPU: NVIDIA GTX 1060 6GB / RTX 2060 or better
+VRAM: 6GB minimum, 8GB+ recommended
+CUDA: Version 11.8 or newer
+Compute Capability: 6.1+ (Pascal architecture or newer)
+
+System Requirements:
+
+OS: Windows 10/11 (best support), Linux Ubuntu 20.04+
+CPU: Intel i5-8400 / AMD Ryzen 5 2600 or better
+RAM: 8GB minimum, 16GB recommended
+Storage: 8GB free space (for larger AI models)
+Python: 3.8 - 3.11
+
+Performance (GPU-accelerated):
+
+OCR Speed: 0.2-1 second per image ⚡
+AI Response: 5-15 seconds for complex answers ⚡
+Model Size: Can run 8B-13B parameter models smoothly
+
+
+📋 Detailed GPU Compatibility:
+✅ Supported NVIDIA GPUs:
+
+High-End: RTX 4090, 4080, 4070, 3090, 3080, 3070
+Mid-Range: RTX 3060, 2080, 2070, 2060, GTX 1080 Ti
+Entry-Level: GTX 1060 6GB, 1070, 1660 Ti
+
+❌ Not Supported:
+
+AMD GPUs (CUDA required)
+Intel GPUs
+GTX 1050/1030 (insufficient VRAM)
+Older GPUs without CUDA 11.8 support
+
+
+💾 Storage Requirements:
+AI Models (downloaded automatically):
+
+Orca Mini 3B: ~2GB (CPU fallback)
+Llama 3 8B: ~4.5GB (recommended)
+Mistral 7B: ~4GB
+WizardLM 13B: ~7GB (high-end systems)
+
+Dependencies: ~500MB
+
+⚙️ Performance Comparison:
+ComponentCPU ModeGPU ModeSpeedupOCR Processing3-5 sec0.3-0.8 sec5-10xAI Inference45-90 sec8-20 sec3-5xModel Loading10-30 sec5-15 sec2xOverall ExperienceSlowFast5-8x
+
+🔧 Quick Compatibility Check:
+Check your GPU:
+bash# Windows - Command Prompt:
+nvidia-smi
+
+# Or check in Device Manager > Display adapters
+Minimum VRAM Test:
+
+Open Task Manager > Performance > GPU
+Look for "Dedicated GPU memory"
+Need 6GB minimum for good performance
+
+Python Environment:
+bashpython --version  # Should be 3.7-3.11
+pip install torch  # Test PyTorch installation
+
+🎯 Recommended Configs:
+Budget Setup (CPU):
+
+i5-8400 + 8GB RAM
+Cost: ~$400 used system
+Performance: Basic functionality
+
+Sweet Spot (GPU):
+
+i5-10400 + RTX 3060 + 16GB RAM
+Cost: ~$800-1000
+Performance: Excellent for most users
+
+Enthusiast (High-end GPU):
+
+i7-12700 + RTX 4070 + 32GB RAM
+Cost: ~$1500-2000
+Performance: Lightning fast, handles largest models
